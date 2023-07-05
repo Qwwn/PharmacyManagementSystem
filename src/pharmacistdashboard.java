@@ -115,8 +115,8 @@ public class pharmacistdashboard extends javax.swing.JFrame {
         getContentPane().add(jButton7, new org.netbeans.lib.awtextra.AbsoluteConstraints(660, 380, 400, -1));
 
         jButton8.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
-        jButton8.setIcon(new javax.swing.ImageIcon(getClass().getResource("/gambar/logout.png"))); // NOI18N
-        jButton8.setText("Logout");
+        jButton8.setIcon(new javax.swing.ImageIcon(getClass().getResource("/gambar/enterprise.png"))); // NOI18N
+        jButton8.setText("Company");
         jButton8.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton8ActionPerformed(evt);
@@ -150,11 +150,7 @@ public class pharmacistdashboard extends javax.swing.JFrame {
 
     private void jButton8ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton8ActionPerformed
         // TODO add your handling code here:
-        int a = JOptionPane.showConfirmDialog(null, "Do you want to Logout", "Select", JOptionPane.YES_NO_OPTION);
-        if (a == 0) {
-            setVisible(false);
-            new masuk().setVisible(true);
-        }
+        new companydashboard().setVisible(true);
     }//GEN-LAST:event_jButton8ActionPerformed
 
     private void jButton7ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton7ActionPerformed
