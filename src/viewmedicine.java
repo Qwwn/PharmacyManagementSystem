@@ -10,7 +10,6 @@ import java.sql.PreparedStatement;
 import javax.swing.JOptionPane;
 import dao.ConnectionProvider;
 import java.sql.Statement;
-import java.sql.*;
 import javax.swing.table.DefaultTableModel;
 import javax.swing.table.TableModel;
 
