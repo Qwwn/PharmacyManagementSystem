@@ -42,7 +42,7 @@ CREATE TABLE `appuser` (
 
 LOCK TABLES `appuser` WRITE;
 /*!40000 ALTER TABLE `appuser` DISABLE KEYS */;
-INSERT INTO `appuser` VALUES (1,'Admin','Admin','01-06-2023','1111111111','admin@admin.com','admin','admin','banyumas'),(2,'Pharmacist','agyl','02-06-2023','1111111111','agyl@pharmacist.com','agyl','agyl','indonesia'),(3,'Pharmacist','Aziz','13-07-2023','1234567891','aziz@gmail.com','aziz','aziz','banyumas'),(4,'Pharmacist','Ashir','06-07-2023','1234567890','asir@gmail.com','asir','asir','bima'),(5,'Pharmacist','anjani','07-07-2023','1234567892','anjani@gmail.com','anjani','anjani','pwt');
+INSERT INTO `appuser` VALUES (1,'Admin','Admin','01-06-2023','1111111111','admin@admin.com','admin','admin','banyumas'),(2,'Pharmacist','agyl','02-06-2023','1111111112','agyl@pharmacist.com','agyl','agyl','indonesia'),(3,'Pharmacist','Aziz','13-07-2023','1234567891','aziz@gmail.com','aziz','aziz','banyumas'),(4,'Pharmacist','Ashir','06-07-2023','1234567890','asir@gmail.com','asir','asir','bima'),(5,'Pharmacist','anjani','07-07-2023','1234567892','anjani@gmail.com','anjani','anjani','pwt');
 /*!40000 ALTER TABLE `appuser` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -74,6 +74,32 @@ INSERT INTO `bill` VALUES (1,'Bill-270884035931500','26-06-2023',10001,'agyl'),(
 UNLOCK TABLES;
 
 --
+-- Table structure for table `company`
+--
+
+DROP TABLE IF EXISTS `company`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!50503 SET character_set_client = utf8mb4 */;
+CREATE TABLE `company` (
+  `company_pk` int NOT NULL AUTO_INCREMENT,
+  `name` varchar(100) DEFAULT NULL,
+  `address` varchar(200) DEFAULT NULL,
+  `phone` varchar(50) DEFAULT NULL,
+  PRIMARY KEY (`company_pk`)
+) ENGINE=InnoDB AUTO_INCREMENT=6 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `company`
+--
+
+LOCK TABLES `company` WRITE;
+/*!40000 ALTER TABLE `company` DISABLE KEYS */;
+INSERT INTO `company` VALUES (1,'Alcon','Daerah Khusus Ibukota Jakarta 10350, Indonesia','6221392818'),(2,'Bausch','Jakarta, Indonesia','6280671221'),(3,'Biopharma','Bandung 40161, Jawa Barat, Indonesia','6222041306'),(4,'Biotek','DKI Jakarta, Indonesia','6221731557'),(5,'Boehringer','Jakarta Selatan, DKI Jakarta','6221255525');
+/*!40000 ALTER TABLE `company` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
 -- Table structure for table `medicine`
 --
 
@@ -97,7 +123,7 @@ CREATE TABLE `medicine` (
 
 LOCK TABLES `medicine` WRITE;
 /*!40000 ALTER TABLE `medicine` DISABLE KEYS */;
-INSERT INTO `medicine` VALUES (1,'004','VITC','kalbe',198,10001),(2,'01','qw','qw',0,1),(3,'009','bodrexx','kalbe',990,10000),(4,'010','paramex','kalbe',10000,20000),(5,'011','vaksin','kalbe',1000,50000);
+INSERT INTO `medicine` VALUES (1,'004','VITC','kalbe',198,10001),(2,'01','a','aa',2,1),(3,'009','bodrexx','kalbe',990,10000),(4,'010','paramex','kalbe',10000,20000),(5,'011','vaksin','kalbe',1000,50000);
 /*!40000 ALTER TABLE `medicine` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
@@ -110,4 +136,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2023-07-05 12:16:37
+-- Dump completed on 2023-07-05 23:58:48
