@@ -79,6 +79,11 @@ public class adduser extends javax.swing.JFrame {
 
         comboUserRole.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
         comboUserRole.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Admin", "Pharmacist" }));
+        comboUserRole.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                comboUserRoleActionPerformed(evt);
+            }
+        });
         getContentPane().add(comboUserRole, new org.netbeans.lib.awtextra.AbsoluteConstraints(111, 115, 302, -1));
 
         jLabel3.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
@@ -281,6 +286,10 @@ public class adduser extends javax.swing.JFrame {
         // TODO add your handling code here:
 
     }//GEN-LAST:event_txtNameActionPerformed
+
+    private void comboUserRoleActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_comboUserRoleActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_comboUserRoleActionPerformed
 
     /**
      * @param args the command line arguments
