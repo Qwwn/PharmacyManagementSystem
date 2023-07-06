@@ -123,7 +123,7 @@ CREATE TABLE `medicine` (
 
 LOCK TABLES `medicine` WRITE;
 /*!40000 ALTER TABLE `medicine` DISABLE KEYS */;
-INSERT INTO `medicine` VALUES (1,'004','VITC','kalbe',198,10001),(2,'01','a','aa',2,1),(3,'009','bodrexx','kalbe',990,10000),(4,'010','paramex','kalbe',10000,20000),(5,'011','vaksin','kalbe',1000,50000);
+INSERT INTO `medicine` VALUES (1,'1','PCT','Alon',100,1000),(2,'02','vitc','Bausch',1000,1000),(3,'03','vitd','Biopharma',100,1000),(4,'04','vite','Biotek',10000,10000),(5,'04','vitb','Boehringer',1000,20000);
 /*!40000 ALTER TABLE `medicine` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
@@ -136,4 +136,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2023-07-05 23:58:48
+-- Dump completed on 2023-07-06 13:49:48
